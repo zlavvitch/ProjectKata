@@ -5,185 +5,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
-
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="page">
-    <header class="header header-hiiden">
-      <nav class="menu-icon">
-        <div class="menu-icon__block">
-          <a class="menu-icon__item" href="#1">
-            <img class="menu-icon__img" src="/images/menu.svg" alt="Меню" />
-          </a>
-
-          <img
-            src="/images/divider.png"
-            alt=""
-            class="menu-icon__divider menu-icon__divider-visible"
-          />
-
-          <a class="menu-icon__item" href="#">
-            <img
-              class="menu-icon__img"
-              src="/images/logo.svg"
-              alt="На главную"
-            />
-          </a>
-
-          <img
-            src="/images/divider.png"
-            alt=""
-            class="menu-icon__divider menu-icon__divider-visible"
-          />
-        </div>
-
-        <div class="menu-icon__block">
-          <div class="menu-icon__inner menu-icon__inner-hidden">
-            <a class="menu-icon__item" href="#">
-              <img
-                class="menu-icon__img"
-                src="/images/call.svg"
-                alt="Позвонить"
-              />
+    <header class="header header--hidden header__page">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#menu">
+              <img class="nav__icon" src="./images/menu.svg" alt="Меню" />
             </a>
-
-            <a class="menu-icon__item" href="#">
-              <img
-                class="menu-icon__img"
-                src="/images/chat.svg"
-                alt="Начать чат"
-              />
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#logo">
+              <img class="nav__icon" src="./images/logo.svg" alt="На главную" />
             </a>
-
-            <a class="menu-icon__item" href="#">
-              <img
-                class="menu-icon__img"
-                src="/images/profile.svg"
-                alt="Профиль"
-              />
+          </li>
+          <li class="nav__item nav__item--hidden">
+            <a class="nav__link" href="#call">
+              <img class="nav__icon" src="./images/call.svg" alt="Позвонить" />
             </a>
-
-            <img
-              src="/images/divider.png"
-              alt=""
-              class="menu-icon__divider menu-icon__divider-visible"
-            />
-          </div>
-
-          <div class="menu-icon__inner">
-            <a class="menu-icon__item" href="#">
+          </li>
+          <li class="nav__item nav__item--hidden">
+            <a class="nav__link" href="#chat">
+              <img class="nav__icon" src="./images/chat.svg" alt="Начать чат" />
+            </a>
+          </li>
+          <li class="nav__item nav__item--hidden">
+            <a class="nav__link" href="#profile">
+              <img class="nav__icon" src="./images/profile.svg" alt="Профиль" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#repair">
               <img
-                class="menu-icon__img"
-                src="/images/repair.svg"
+                class="nav__icon"
+                src="./images/repair.svg"
                 alt="Оставить заявку"
               />
             </a>
-
-            <a class="menu-icon__item" href="#">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#check">
               <img
-                class="menu-icon__img"
-                src="/images/checkstatus.svg"
+                class="nav__icon"
+                src="./images/checkstatus.svg"
                 alt="Проверить статус"
               />
             </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="main">
-      <div class="block-title main__block-title">
-        <div class="block-title__inner">
-          <img
-            src="/images/highlight.png"
-            alt=""
-            class="block-title__divider"
-          />
-          <h1 class="block-title__title-text">Услуги и сервисы</h1>
-        </div>
-
-        <nav class="block-title__nav block-title__nav-hidden">
-          <a class="block-title__item" href="#">
-            <span class="block-title__text">Оставить заявку</span>
-            <img
-              class="block-title__img"
-              src="/images/repair.svg"
-              alt="Оставить заявку"
-            />
-          </a>
-
-          <a class="block-title__item" href="#">
-            <span class="block-title__text">Проверить статус</span>
-            <img
-              class="block-title__img"
-              src="/images/checkstatus.svg"
-              alt="Проверить статус"
-            />
-          </a>
-        </nav>
-      </div>
-
-      <nav class="block-nav main__block-nav">
-        <ul class="block-nav__navbar">
-          <li class="block-nav__item">
-            <a class="block-nav__link block-nav__link-active" href="#"
-              >Ремонтируемые бренды</a
-            >
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Дополнительные услуги</a>
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Цена на услуги</a>
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Адреса сервисных центров</a>
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Специальные цены</a>
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Специальные цены</a>
-          </li>
-          <li class="block-nav__point">
-            <a class="block-nav__link" href="#">Отзывы</a>
           </li>
         </ul>
       </nav>
-
-      <article class="block-about main__block-about">
-        <div class="content block-about__content">
-          <div class="content__inner">
-            <p class="content__text">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
-            <br />
-            <p class="content__text">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера, что подтверждает большое количество постоянных клиентов.
-              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.
-            </p>
-          </div>
-
-          <div class="button__inner">
-            <button class="button__items">
-              <img class="button__item" src="/images/icon.svg" alt="" />
-              <p class="button__text">Читать далее</p>
-            </button>
-          </div>
+    </header>
+    <main class="main">
+      <section class="title main__title">
+        <h1 class="title__text">Услуги и сервисы</h1>
+        <a class="submit submit--hidden title__submit" href="#">
+          <span class="submit__text">Оставить заявку</span>
+          <img
+            class="submit__icon"
+            src="./images/repair.svg"
+            alt="Оставить заявку"
+          />
+        </a>
+        <a class="submit submit--hidden title__submit" href="#">
+          <span class="submit__text">Проверить статус</span>
+          <img
+            class="submit__icon"
+            src="./images/checkstatus.svg"
+            alt="Проверить статус"
+          />
+        </a>
+      </section>
+      <nav class="main-nav main__nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#"
+              >Ремонтируемые бренды</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Дополнительные услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Цена на услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Адреса сервисных центров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Специальные цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Специальные цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <article class="article main__article">
+        <div class="article__wrapper">
+          <p class="article__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+            <br /><br />
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <button class="button article__button">
+            <img class="button__icon" src="./images/icon.svg" alt="" />
+            <span class="button__title">Читать далее</span>
+          </button>
         </div>
 
-        <div class="block-about__inner-img">
+        <div class="article__">
           <img
-            class="block-about__img"
-            src="/images/image1.png"
-            alt="Картинка к статье"
+            class="article__picture"
+            src="./images/image1.png"
+            alt="Картинка к тексту"
           />
         </div>
       </article>
