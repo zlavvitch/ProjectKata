@@ -1,4 +1,4 @@
-@import 'css/fonts.css';
+@import 'fonts.css';
 
 *,
 *::before,
@@ -94,7 +94,7 @@
   width: 4px;
   margin-left: -24px;
   margin-right: 20px;
-  background-image: url('images/highlight.png');
+  background-image: url('../images/highlight.png');
 }
 
 .aside__submit {
