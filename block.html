@@ -8,58 +8,100 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/block.css" />
   </head>
-  <body>
-    <aside class="aside">
-      <div class="aside-header aside__header">
-        <button class="aside-header__button">
-          <img
-            class="aside-header__icon"
-            src="images/close.svg"
-            alt="Закрыть"
-          />
+  <body class="page">
+    <aside class="menu">
+      <header class="menu-header menu__header">
+        <button class="menu-button">
+          <img class="menu-button__img" src="images/close.svg" alt="Закрыть" />
         </button>
-
-        <button class="aside-header__button">
+        <button class="menu-button">
           <img
-            class="aside-header__icon"
+            class="menu-button__img"
             src="images/logo.svg"
             alt="На главную"
           />
         </button>
-
-        <button class="aside-header__button">
-          <img class="aside-header__icon" src="images/search.svg" alt="Поиск" />
+        <button class="menu-button">
+          <img class="menu-button__img" src="images/search.svg" alt="Поиск" />
         </button>
-      </div>
-      <nav class="aside-nav aside__nav">
-        <ul class="aside-nav__list">
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Ремонт техники</a>
+      </header>
+      <nav class="menu-nav menu__nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Ремонт техники</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Услуги и сервисы</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Услуги и сервисы</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Коорпоративным клиентам</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Коорпоративным клиентам</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Продавцам техники</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Продавцам техники</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Партнерам</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Партнерам</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Производителям</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Производителям</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Наши сервисные центра</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Наши сервисные центра</a>
           </li>
-          <li class="aside-nav__item">
-            <a class="aside-nav__link">Контакты</a>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
-      <div class="aside-submit aside__submit">
+
+      <nav class="menu-communication menu__communication">
+        <ul class="menu-communication__list">
+          <li class="menu-communication__item">
+            <a class="menu-communication__link" href="#call">
+              <img
+                class="menu-communication__img"
+                src="images/call.svg"
+                alt="Позвонить"
+              />
+            </a>
+          </li>
+          <li class="menu-communication__item">
+            <a class="menu-communication__link" href="#chat">
+              <img
+                class="menu-communication__img"
+                src="images/chat.svg"
+                alt="Начать чат"
+              />
+            </a>
+          </li>
+          <li class="menu-communication__item">
+            <a class="menu-communication__link" href="#profile">
+              <img
+                class="menu-communication__img"
+                src="images/profile.svg"
+                alt="Профиль"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-contacts menu__contacts">
+        <a class="link-mail menu-contacts__link" href="mailto:mail@cps.com"
+          >mail@cps.com</a
+        >
+        <a class="link-tell menu-contacts__link" href="tel:+78008908900"
+          >8 800 890 8900</a
+        >
+      </div>
+
+      <footer class="menu-footer">
+        <a class="menu-footer__link menu-footer__link--active" href="#ru">RU</a>
+        <a class="menu-footer__link" href="#en">EN</a>
+        <a class="menu-footer__link" href="#ch">CH</a>
+      </footer>
+
+      <!-- <div class="aside-submit aside__submit">
         <a class="aside-submit__link" href="#call">
           <img
             class="aside-submit__icon"
@@ -75,7 +117,6 @@
             alt="Начать чат"
           />
         </a>
-
         <a class="aside-submit__link" href="#profile">
           <img
             class="aside-submit__icon"
@@ -92,7 +133,7 @@
         <a class="langs__link langs__link--active" href="#ru">RU</a>
         <a class="langs__link" href="#en">EN</a>
         <a class="langs__link" href="#ch">CH</a>
-      </div>
+      </div> -->
     </aside>
   </body>
 </html>
