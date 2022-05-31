@@ -14,33 +14,33 @@
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#menu">
-              <img class="nav__icon" src="./images/menu.svg" alt="Меню" />
+              <img class="nav__img" src="./images/menu.svg" alt="Меню" />
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#logo">
-              <img class="nav__icon" src="./images/logo.svg" alt="На главную" />
+            <a class="nav__link nav__link--disabled" href="#logo">
+              <img class="nav__img" src="./images/logo.svg" alt="На главную" />
             </a>
           </li>
           <li class="nav__item nav__item--hidden">
             <a class="nav__link" href="#call">
-              <img class="nav__icon" src="./images/call.svg" alt="Позвонить" />
+              <img class="nav__img" src="./images/call.svg" alt="Позвонить" />
             </a>
           </li>
           <li class="nav__item nav__item--hidden">
             <a class="nav__link" href="#chat">
-              <img class="nav__icon" src="./images/chat.svg" alt="Начать чат" />
+              <img class="nav__img" src="./images/chat.svg" alt="Начать чат" />
             </a>
           </li>
           <li class="nav__item nav__item--hidden">
             <a class="nav__link" href="#profile">
-              <img class="nav__icon" src="./images/profile.svg" alt="Профиль" />
+              <img class="nav__img" src="./images/profile.svg" alt="Профиль" />
             </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#repair">
               <img
-                class="nav__icon"
+                class="nav__img"
                 src="./images/repair.svg"
                 alt="Оставить заявку"
               />
@@ -49,7 +49,7 @@
           <li class="nav__item">
             <a class="nav__link" href="#check">
               <img
-                class="nav__icon"
+                class="nav__img"
                 src="./images/checkstatus.svg"
                 alt="Проверить статус"
               />
@@ -61,47 +61,57 @@
     <main class="main">
       <section class="title main__title">
         <h1 class="title__text">Услуги и сервисы</h1>
-        <a class="submit submit--hidden title__submit" href="#">
-          <span class="submit__text">Оставить заявку</span>
-          <img
-            class="submit__icon"
-            src="./images/repair.svg"
-            alt="Оставить заявку"
-          />
-        </a>
-        <a class="submit submit--hidden title__submit" href="#">
-          <span class="submit__text">Проверить статус</span>
-          <img
-            class="submit__icon"
-            src="./images/checkstatus.svg"
-            alt="Проверить статус"
-          />
-        </a>
+        <nav class="title-nav title-nav--hidden title__title-nav">
+          <ul class="title-nav__list">
+            <li class="title-nav__item">
+              <a class="title-nav__link" href="#">
+                <span class="title-nav__text">Оставить заявку</span>
+                <img
+                  class="title-nav__img"
+                  src="./images/repair.svg"
+                  alt="Оставить заявку"
+                />
+              </a>
+            </li>
+            <li class="title-nav__item">
+              <a class="title-nav__link" href="#">
+                <span class="title-nav__text">Проверить статус</span>
+                <img
+                  class="title-nav__img"
+                  src="./images/checkstatus.svg"
+                  alt="Проверить статус"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </section>
-      <nav class="main-nav main__nav">
+      <nav class="main-nav main__main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#"
+            <a class="main-nav__link main-nav__link--active" href="#repair"
               >Ремонтируемые бренды</a
             >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Дополнительные услуги</a>
+            <a class="main-nav__link" href="#services">Дополнительные услуги</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Цена на услуги</a>
+            <a class="main-nav__link" href="#price">Цена на услуги</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Адреса сервисных центров</a>
+            <a class="main-nav__link" href="#adress"
+              >Адреса сервисных центров</a
+            >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Специальные цены</a>
+            <a class="main-nav__link" href="#specialprice">Специальные цены</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Специальные цены</a>
+            <a class="main-nav__link" href="#specialprice">Специальные цены</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Отзывы</a>
+            <a class="main-nav__link" href="#feedback">Отзывы</a>
           </li>
         </ul>
       </nav>
@@ -117,15 +127,14 @@
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
           </p>
-          <button class="button article__button">
-            <img class="button__icon" src="./images/icon.svg" alt="" />
-            <span class="button__title">Читать далее</span>
+          <button class="article-button article__article-button">
+            <img class="article-button__img" src="./images/icon.svg" alt="" />
+            <span class="article-button__title">Читать далее</span>
           </button>
         </div>
-
-        <div class="article__">
+        <div class="article__img-wrapper">
           <img
-            class="article__picture"
+            class="article__img"
             src="./images/image1.png"
             alt="Картинка к тексту"
           />

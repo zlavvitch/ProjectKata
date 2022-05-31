@@ -17,6 +17,18 @@
   margin-right: 16px;
 }
 
+.nav__link--disabled {
+  cursor: default;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+.nav__link--disabled:hover {
+  opacity: 1;
+}
+
 .nav__item--hidden {
   display: none;
 }
