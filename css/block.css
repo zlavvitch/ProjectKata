@@ -1,4 +1,6 @@
 @import 'fonts.css';
+@import 'nav.css';
+@import 'reset-list.css';
 
 *,
 *::before,
@@ -32,31 +34,8 @@
   align-items: center;
 }
 
-.menu-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.menu-button--disabled {
-  cursor: default;
-}
-
-.menu-button:first-of-type {
-  margin-right: 16px;
-}
-
-.menu-button:nth-of-type(2) {
+.menu-header__item:nth-of-type(2) {
   margin-right: auto;
-}
-
-.menu-button:hover {
-  opacity: 0.5;
-}
-
-.menu-button--disabled:hover {
-  opacity: 1;
 }
 
 .menu__menu-nav {
@@ -70,9 +49,9 @@
 .menu-nav__list {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  /* list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; */
 }
 
 .menu-nav__item {
@@ -90,12 +69,14 @@
   letter-spacing: -0.2px;
 }
 
-.menu-nav__link:hover {
+.menu-nav__link:hover,
+.menu-nav__link--active {
   color: rgba(0, 0, 0, 0.5);
   padding-left: 0;
 }
 
-.menu-nav__link:hover::before {
+.menu-nav__link:hover::before,
+.menu-nav__link--active::before {
   content: '';
   display: inline-flex;
   align-items: center;
@@ -106,42 +87,15 @@
   background-image: url('../images/highlight.png');
 }
 
-.menu__nav {
-  margin-bottom: 16px;
-}
-
-.nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__item {
-  display: flex;
-  margin-right: 16px;
-}
-
-.nav__item:last-of-type {
-  margin-right: 0;
-}
-
-.nav__link {
-  outline: none;
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  opacity: 0.5;
-}
-
 .menu__contacts {
+  margin-top: 16px;
   margin-bottom: 40px;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }
 
 .contacts__link {
@@ -172,21 +126,21 @@
   letter-spacing: -0.6px;
 }
 
-.menu-footer {
+.langs {
   display: flex;
 }
 
-.menu-footer__link {
+.langs__link {
   outline: none;
   text-decoration: none;
   color: #1b1c21;
   margin-right: 7px;
 }
 
-.menu-footer__link:last-of-type {
+.langs__link:last-of-type {
   margin-right: 0;
 }
 
-.menu-footer__link--active {
+.langs__link--active {
   opacity: 0.5;
 }

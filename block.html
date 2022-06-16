@@ -11,24 +11,34 @@
   <body class="page">
     <aside class="menu">
       <header class="menu-header menu__header">
-        <button class="menu-button">
-          <img class="menu-button__img" src="images/close.svg" alt="Закрыть" />
-        </button>
-        <button class="menu-button menu-button--disabled">
-          <img
-            class="menu-button__img"
-            src="images/logo.svg"
-            alt="На главную"
-          />
-        </button>
-        <button class="menu-button">
-          <img class="menu-button__img" src="images/search.svg" alt="Поиск" />
-        </button>
+        <nav class="nav menu-header__nav">
+          <ul class="nav__list menu-header__list reset-list">
+            <li class="nav__item menu-header__item">
+              <a class="nav__link" href="#close">
+                <img class="nav__img" src="images/close.svg" alt="Закрыть" />
+              </a>
+            </li>
+            <li class="nav__item menu-header__item">
+              <a class="nav__link" href="#logo">
+                <img
+                  class="nav__img"
+                  src="./images/logo.svg"
+                  alt="На главную"
+                />
+              </a>
+            </li>
+            <li class="nav__item menu-header__item">
+              <a class="nav__link" href="#search">
+                <img class="nav__img" src="images/search.svg" alt="Поиск" />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <nav class="menu-nav menu__menu-nav">
-        <ul class="menu-nav__list">
+        <ul class="menu-nav__list reset-list">
           <li class="menu-nav__item">
-            <a class="menu-nav__link">Ремонт техники</a>
+            <a class="menu-nav__link menu-nav__link--active">Ремонт техники</a>
           </li>
           <li class="menu-nav__item">
             <a class="menu-nav__link">Услуги и сервисы</a>
@@ -53,8 +63,8 @@
           </li>
         </ul>
       </nav>
-      <nav class="nav menu__nav">
-        <ul class="nav__list">
+      <nav class="nav">
+        <ul class="nav__list reset-list">
           <li class="nav__item">
             <a class="nav__link" href="#call">
               <img class="nav__img" src="images/call.svg" alt="Позвонить" />
@@ -72,19 +82,20 @@
           </li>
         </ul>
       </nav>
-      <div class="contacts menu__contacts">
+      <address class="contacts menu__contacts">
         <a class="link-mail contacts__link" href="mailto:mail@cps.com"
           >mail@cps.com</a
         >
         <a class="link-tell contacts__link" href="tel:+78008908900"
           >8 800 890 8900</a
         >
+      </address>
+
+      <div class="langs">
+        <a class="langs__link langs__link--active" href="#ru">RU</a>
+        <a class="langs__link" href="#en">EN</a>
+        <a class="langs__link" href="#ch">CH</a>
       </div>
-      <footer class="menu-footer">
-        <a class="menu-footer__link menu-footer__link--active" href="#ru">RU</a>
-        <a class="menu-footer__link" href="#en">EN</a>
-        <a class="menu-footer__link" href="#ch">CH</a>
-      </footer>
     </aside>
   </body>
 </html>
