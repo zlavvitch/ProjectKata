@@ -49,9 +49,6 @@
 .menu-nav__list {
   display: flex;
   flex-direction: column;
-  /* list-style: none;
-  margin: 0;
-  padding: 0; */
 }
 
 .menu-nav__item {
@@ -141,6 +138,7 @@
   margin-right: 0;
 }
 
-.langs__link--active {
+.langs__link--active,
+.langs__link:hover {
   opacity: 0.5;
 }

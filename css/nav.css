@@ -6,15 +6,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* padding: 0;
-  margin: 0;
-  list-style: none; */
 }
 
 .nav__item {
   display: flex;
   align-items: center;
   margin-right: 16px;
+}
+
+.nav__item:last-of-type {
+  margin-right: 0;
 }
 
 .nav__link:hover {
@@ -25,16 +26,6 @@
   opacity: 1;
 }
 
-.nav__item--hidden {
+.nav__text--hidden {
   display: none;
-}
-
-.nav__item:last-of-type {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .nav__item--hidden {
-    display: flex;
-  }
 }

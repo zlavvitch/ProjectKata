@@ -26,6 +26,10 @@
   padding: 0 16px;
 }
 
+.nav__item--hidden:nth-of-type(n + 3):nth-of-type(-n + 5) {
+  display: none;
+}
+
 .header__item:nth-of-type(2) {
   margin-right: auto;
 }
@@ -74,10 +78,6 @@
   background-image: url('./images/highlight.png');
 }
 
-/* .page-nav--hidden {
-  display: none;
-} */
-
 .main__nav {
   margin: 0 16px 24px 16px;
 }
@@ -85,14 +85,12 @@
 .article {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .article__wrapper {
   display: flex;
   flex-direction: column;
   margin: 0 16px 16px 16px;
-  /* flex: 1 1 312px; */
   flex: 1 1 40%;
 }
 
@@ -127,20 +125,21 @@
 }
 
 .article__img-wrapper {
-  /* flex: 1 1 auto; */
   flex: 1 1 60%;
   display: flex;
 }
 
 .article__img {
-  /* height: auto; */
   width: 100%;
-  /* flex-basis: 541px; */
 }
 
 @media screen and (min-width: 768px) {
   .header {
     padding: 0 40px 0 24px;
+  }
+
+  .nav__item--hidden:nth-of-type(n + 3):nth-of-type(-n + 5) {
+    display: flex;
   }
 
   .header__item:nth-of-type(5) {
@@ -200,36 +199,27 @@
 
 @media screen and (min-width: 1120px) {
   .header--hidden {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    padding-right: 32px;
+  }
+
+  .nav__item--hidden {
     display: none;
   }
 
-  .main__title {
-    margin-top: 42px;
+  .nav__item--hidden:nth-of-type(n + 3):nth-of-type(-n + 5) {
+    display: none;
   }
 
-  /* .page-nav {
-    display: flex;
+  .nav__item:last-of-type,
+  .nav__item:nth-last-of-type(2) {
+    visibility: visible;
   }
 
-  .page-nav__list {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .page-nav__item {
-    display: flex;
-    align-items: center;
-    margin-right: 32px;
-  }
-
-  .page-nav__item:last-of-type {
-    margin-right: 30px;
-  }
-
-  .page-nav__link {
+  .nav__link {
     display: flex;
     align-items: center;
     outline: none;
@@ -237,12 +227,17 @@
     margin-right: 8px;
   }
 
-  .page-nav__text {
+  .nav__text {
+    display: flex;
     font-size: 16px;
     line-height: 24px;
     color: #1b1c21;
     margin-right: 8px;
-  } */
+  }
+
+  .main__title {
+    margin-top: 42px;
+  }
 
   .main__nav {
     margin-bottom: 0;
