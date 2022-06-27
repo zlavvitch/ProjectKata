@@ -2,6 +2,7 @@
 @import './css/nav.css';
 @import './css/page-nav.css';
 @import './css/reset-list.css';
+@import './css/collapse-button.css';
 
 *,
 *::before,
@@ -104,24 +105,8 @@
   color: #1b1c21;
 }
 
-.article-button {
-  display: flex;
-  align-items: center;
-  outline: none;
-  padding: 0;
+.article__button {
   margin-top: 10px;
-  border: 0;
-  background-color: inherit;
-}
-
-.article-button__img {
-  margin-right: 16px;
-}
-
-.article-button__title {
-  font-size: 16px;
-  line-height: 24px;
-  white-space: nowrap;
 }
 
 .article__img-wrapper {
