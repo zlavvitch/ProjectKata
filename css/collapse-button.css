@@ -18,8 +18,6 @@
   white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) {
-  .collapse-button__img--activated {
-    transform: rotate(180deg);
-  }
+.collapse-button__img--activated {
+  transform: rotate(180deg);
 }
