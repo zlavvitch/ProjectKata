@@ -8,6 +8,7 @@
   white-space: nowrap;
   list-style: none;
   overflow: scroll;
+  gap: 3px 5px;
 }
 
 .page-nav__item {
@@ -34,9 +35,5 @@
   .page-nav__list {
     flex-wrap: wrap;
     overflow: visible;
-  }
-
-  .page-nav__item {
-    margin-bottom: 14px;
   }
 }
