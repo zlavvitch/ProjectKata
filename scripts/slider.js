@@ -24,6 +24,7 @@ const enableSwiper = function () {
       el: '.swiper-pagination',
     },
   });
+  return swiper;
 };
 
 const breakpoint = window.matchMedia('(max-width: 767px)');
