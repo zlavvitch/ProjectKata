@@ -1,6 +1,6 @@
 @import 'fonts.css';
 @import 'blocks/nav.css';
-@import 'blocks/reset-list.css';
+@import 'mixins/reset-list.css';
 
 *,
 *::before,
