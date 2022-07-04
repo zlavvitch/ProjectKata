@@ -1,9 +1,9 @@
 @import 'fonts.css';
-@import '/styles/blocks/nav.css';
-@import '/styles/blocks/page-nav.css';
-@import '/styles/mixins/reset-list.css';
-@import '/styles/blocks/collapse-button.css';
-@import '/styles/blocks/article.css';
+@import '/blocks/nav.css';
+@import '/blocks/page-nav.css';
+@import '/mixins/reset-list.css';
+@import '/blocks/collapse-button.css';
+@import '/blocks/article.css';
 
 *,
 *::before,
@@ -42,7 +42,7 @@
   height: 32px;
   width: 2px;
   margin: 28px 20px 27px 0;
-  background-image: url('/images/divider.png');
+  background-image: url('./images/divider.png');
 }
 
 .main {
