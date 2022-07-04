@@ -1,9 +1,9 @@
 @import 'fonts.css';
-@import '/blocks/nav.css';
-@import '/blocks/page-nav.css';
-@import '/mixins/reset-list.css';
-@import '/blocks/collapse-button.css';
-@import '/blocks/article.css';
+@import 'blocks/nav.css';
+@import 'blocks/page-nav.css';
+@import 'mixins/reset-list.css';
+@import 'blocks/collapse-button.css';
+@import 'blocks/article.css';
 
 *,
 *::before,
@@ -42,7 +42,7 @@
   height: 32px;
   width: 2px;
   margin: 28px 20px 27px 0;
-  background-image: url('./images/divider.png');
+  background-image: url('../images/divider.png');
 }
 
 .main {
@@ -77,7 +77,7 @@
   height: 40px;
   width: 4px;
   margin-right: 12px;
-  background-image: url('/images/highlight.png');
+  background-image: url('../images/highlight.png');
 }
 
 .main__nav {
@@ -103,7 +103,7 @@
     height: 32px;
     width: 2px;
     margin: 28px 0 27px 20px;
-    background-image: url('/images/divider.png');
+    background-image: url('../images/divider.png');
   }
 
   .header__item:nth-child(6)::before {
