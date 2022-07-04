@@ -3,7 +3,8 @@
 @import 'mixins/reset-list.css';
 @import 'blocks/swiper.css';
 @import 'blocks/subtitle.css';
-@import 'blocks/slider.css';
+@import 'blocks/cards.css';
+@import 'blocks/card.css';
 
 *,
 *::before,
@@ -16,33 +17,27 @@
   background-color: #f8f8f8;
 }
 
-.slider-block {
+.catalog {
   display: flex;
   flex-direction: column;
 }
 
-.slider-block__subtitle {
+.catalog__subtitle {
   margin-bottom: 16px;
 }
 
-.slider__button--hidden {
+.catalog__button--hidden {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .slider-block__subtitle {
+  .catalog__subtitle {
     margin-bottom: 24px;
   }
 
-  .slider__button {
+  .catalog__button {
     display: flex;
     margin-top: 24px;
-    margin-left: 8px;
-  }
-
-  .collapse-button__img--activated {
-    transform: rotate(180deg);
+    margin-left: 32px;
   }
 }
-
-

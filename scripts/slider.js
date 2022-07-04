@@ -1,12 +1,14 @@
 'use sctrict';
 
-const slider = document.querySelector('.slider');
-const sliderItems = slider.querySelector('.slider__items');
+const cards = document.querySelector('.cards');
+const cardsItems = cards.querySelector('.cards__items');
 // const sliderItem = slider.querySelectorAll('.slider__item');
 // const sliderPagination = slider.querySelector('.slider__pagination');
-const collapseButton = slider.querySelector('.collapse-button');
-const collapseButteonTitle = slider.querySelector('.collapse-button__title');
-const collapseButtonImg = slider.querySelector('.collapse-button__img');
+const catalog = document.querySelector('.catalog');
+const collapseButton = catalog.querySelector('.collapse-button');
+const collapseButteonTitle = catalog.querySelector('.collapse-button__title');
+const collapseButtonImg = catalog.querySelector('.collapse-button__img');
+
 let swiper;
 
 const enableSwiper = function () {
@@ -40,8 +42,9 @@ breakpoint.addEventListener('change', breakpointChecker);
 breakpointChecker();
 
 collapseButton.addEventListener('click', function () {
-  sliderItems.classList.toggle('slider__items--visible');
+  cardsItems.classList.toggle('cards__items--visible');
   collapseButtonImg.classList.toggle('collapse-button__img--activated');
+  // collapseButteonTitle.toggle('collapse-button__title--activated');
 
   let changeButtonText = function () {
     collapseButteonTitle.textContent === 'Показать все'
