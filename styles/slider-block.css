@@ -1,9 +1,9 @@
-@import '/styles/fonts.css';
-@import 'collapse-button.css';
-@import '/styles/mixins/reset-list.css';
-@import 'swiper.css';
-@import 'subtitle.css';
-@import 'slider.css';
+@import 'fonts.css';
+@import 'blocks/collapse-button.css';
+@import 'mixins/reset-list.css';
+@import 'blocks/swiper.css';
+@import 'blocks/subtitle.css';
+@import 'blocks/slider.css';
 
 *,
 *::before,
@@ -45,6 +45,4 @@
   }
 }
 
-/* @media screen and (min-width: 1120px) {
- 
-} */
+
