@@ -70,10 +70,6 @@
     background-color: #ffffff;
   }
 
-  .slider__pagination {
-    display: none;
-  }
-
   .slider__button {
     display: flex;
     margin-top: 24px;

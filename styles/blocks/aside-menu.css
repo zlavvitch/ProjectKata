@@ -1,6 +1,6 @@
-@import 'fonts.css';
-@import 'nav.css';
-@import 'reset-list.css';
+@import '/styles/fonts.css';
+@import '/styles/blocks/nav.css';
+@import '/styles/blocks/reset-list.css';
 
 *,
 *::before,
