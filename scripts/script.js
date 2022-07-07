@@ -1,9 +1,11 @@
 'use sctrict';
 
-let collapseButton = document.querySelector('.collapse-button');
-let collapseButteonTitle = document.querySelector('.collapse-button__title');
-let collapseButtonImg = document.querySelector('.collapse-button__img');
-let articleText = document.querySelector('.article__text');
+const collapseButton = document.querySelector('.collapse-button');
+const collapseButteonTitle = collapseButton.querySelector(
+  '.collapse-button__title'
+);
+const collapseButtonImg = collapseButton.querySelector('.collapse-button__img');
+const articleText = document.querySelector('.article__text');
 
 collapseButton.addEventListener('click', function () {
   articleText.classList.toggle('article__text--visible');
@@ -16,4 +18,5 @@ collapseButton.addEventListener('click', function () {
   };
 
   changeButtonText();
+
 });
