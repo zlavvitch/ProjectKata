@@ -1,0 +1,24 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.langs {
+  display: flex;
+
+  &__link {
+    outline: none;
+    text-decoration: none;
+    color: $textBlackColor;
+    margin-right: 7px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &--active,
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+

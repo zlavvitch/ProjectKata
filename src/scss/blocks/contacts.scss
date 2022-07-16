@@ -1,0 +1,39 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+
+  &__link {
+    outline: none;
+    text-decoration: none;
+    color: $textBlackColor;
+    margin-bottom: 12px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.link {
+  &-mail {
+    $mdSize: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &-tell {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+}

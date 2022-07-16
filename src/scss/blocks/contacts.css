@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+.contacts__link {
+  outline: none;
+  text-decoration: none;
+  color: #1b1c21;
+  margin-bottom: 12px;
+}
+.contacts__link:hover {
+  opacity: 0.5;
+}
+.contacts__link:last-of-type {
+  margin-bottom: 0;
+}
+
+.link-mail {
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.link-tell {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}

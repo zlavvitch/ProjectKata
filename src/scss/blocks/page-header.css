@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+  max-height: 88px;
+  padding: 0 16px;
+}
+.header__item--hidden:nth-of-type(n + 3):nth-of-type(-n + 5) {
+  display: none;
+}
+.header__item--hidden:nth-of-type(2) {
+  margin-right: auto;
+}
+.header__item--hidden:nth-child(6)::before {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 2px;
+  margin: 28px 20px 27px 0;
+  background-image: url("../../img/divider.png");
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 40px 0 24px;
+  }
+  .header__item:first-child::after {
+    content: "";
+    display: block;
+    height: 32px;
+    width: 2px;
+    margin: 28px 0 27px 20px;
+    background-image: url("../../img/divider.png");
+  }
+  .header__item:nth-child(6)::before {
+    margin-left: 20px;
+  }
+  .header__item--hidden:nth-of-type(n + 3):nth-of-type(-n + 5) {
+    display: flex;
+  }
+  .header__item--hidden:nth-of-type(5) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .header--hidden {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    padding-right: 32px;
+  }
+
+  .header__item:nth-child(6)::before {
+    display: none;
+  }
+  .header__item--hidden {
+    display: none;
+  }
+  .header__item:last-of-type, .header__item:nth-last-of-type(2) {
+    visibility: visible;
+  }
+}

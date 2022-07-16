@@ -1,0 +1,21 @@
+@mixin  menuMobile {
+  @media screen and (min-width: $breakpoint__sm) {
+    @content;
+  }
+  }
+   
+   
+   @mixin  tablet {
+    @media screen and (min-width: $breakpoint__md) {
+      @content;
+    }
+    }
+
+    @mixin  desktop {
+      @media screen and (min-width: $breakpoint__xl) {
+        @content;
+      }
+      }
+
+
+     
