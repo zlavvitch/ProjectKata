@@ -1,0 +1,3 @@
+[submodule "webpack-static-template"]
+    path = webpack-static-template
+    url = git@github.com:zlavvitch/ProjectKata.git
