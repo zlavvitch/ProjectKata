@@ -1,1 +1,1 @@
-[Demo](https://zlavvitch.github.io/ProjectKata/)
+[Demo](https://zlavvitch.github.io/ProjectKata/dist/index.html)
