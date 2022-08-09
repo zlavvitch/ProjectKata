@@ -1,0 +1,138 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.card-price {
+  max-width: 260px;
+  height: 203px;
+  padding: 16px 16px 4px 16px;
+  background-color: $bgWhiteColor;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__title {
+    color: $textGreyColor;
+    font-size: $smSize;
+    line-height: 16px;
+    font-weight: 500;
+    opacity: 72.18%;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: $smSize;
+    line-height: 18px;
+  }
+
+  &__title ~ &__text {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+  }
+}
+
+@include tablet {
+  .card-price {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    padding: 16px 16px;
+    align-items: center;
+    justify-content: space-between;
+
+    &--hidden {
+      display: flex;
+      background-color: $bgGreyColor;
+    }
+
+    &::after {
+      content: '';
+      width: calc(100% - 32px);
+      height: 1px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      background-image: url(../img/ph-line.svg);
+    }
+
+    &:first-of-type {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:nth-of-type(2) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    &:last-of-type {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__title--hidden {
+      display: none;
+    }
+
+    &__title ~ &__text {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      flex-basis: 12%;
+
+      &:first-of-type {
+        flex-basis: 59.5%;
+      }
+
+      &:last-of-type {
+        flex-basis: none;
+      }
+    }
+
+    &__text {
+      flex-basis: 12%;
+
+      &:first-of-type {
+        flex-basis: 59.5%;
+      }
+    }
+
+    &__link {
+      position: unset;
+      display: inline-flex;
+
+      &--hidden {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .card-price {
+    padding: 16px 24px;
+
+    &::after {
+      content: '';
+      width: calc(100% - 48px);
+    }
+  }
+}

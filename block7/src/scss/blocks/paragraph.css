@@ -1,0 +1,51 @@
+@import '~normalize.css';
+.paragraph {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.paragraph__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.paragraph__link {
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  opacity: 1;
+}
+.paragraph__link:hover {
+  opacity: 0.5;
+}
+.paragraph__link::after {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 9px;
+  background-image: url(../img/prg-arrow.svg);
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    padding: 0;
+    padding-left: 24px;
+    width: 421px;
+  }
+  .paragraph__text {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .paragraph {
+    padding-left: 32px;
+  }
+}

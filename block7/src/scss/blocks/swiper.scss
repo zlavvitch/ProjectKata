@@ -1,0 +1,45 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.swiper {
+  width: 100vw;
+  
+  &-wrapper {
+    padding-bottom: 30px;
+  }
+
+  &-pagination {
+    bottom: 0 !important;
+
+    &-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #dddddd;
+
+      &-active {
+        background-color: #b5b6bc;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .swiper {
+    &-wrapper {
+      padding-bottom: 0;
+    }
+
+    &__pagination {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .swiper {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

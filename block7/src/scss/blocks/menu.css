@@ -1,0 +1,123 @@
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+.menu--opened {
+  opacity: 1;
+  visibility: visible;
+}
+.menu__body {
+  min-height: 100%;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  padding: 19px 24px 32px 24px;
+  background-color: #ffffff;
+  box-shadow: 5px 0 30px 5px #cccbcb, 5px 0 0 100vw rgba(255, 255, 255, 0.9);
+  transform: translate(-100%, 0);
+  opacity: 0;
+  transition: all 1s;
+}
+.menu__body--opened {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.menu__header {
+  margin-bottom: 46.5px;
+}
+.menu__menu-nav {
+  margin-bottom: auto;
+}
+.menu__contacts {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.menu .menu-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu .menu-header__item:nth-of-type(2) {
+  margin-right: auto;
+}
+.menu .menu-nav {
+  width: 100%;
+}
+.menu .menu-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu-nav__item {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.menu .menu-nav__link {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.menu .menu-nav__link:hover {
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 0;
+}
+.menu .menu-nav__link:hover::before {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  width: 4px;
+  margin-left: -24px;
+  margin-right: 20px;
+  background-image: url("../img/highlight.png");
+}
+.menu .menu-nav__link--active {
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 0;
+}
+.menu .menu-nav__link--active::before {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  width: 4px;
+  margin-left: -24px;
+  margin-right: 20px;
+  background-image: url("../img/highlight.png");
+}
+
+@media screen and (min-width: 361px) {
+  .menu {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .menu {
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
+  .menu__body {
+    padding-top: 30px;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+    box-shadow: none;
+    transform: translate(0, 0);
+  }
+  .menu .menu-header__item--hidden {
+    display: none;
+  }
+}

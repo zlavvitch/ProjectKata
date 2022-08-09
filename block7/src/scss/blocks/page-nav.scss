@@ -1,0 +1,42 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.page-nav {
+  display: flex;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 3px 5px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    padding: 8px 9.38px 8px 16.67px;
+    outline: none;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: $textGreyColor;
+    font-size: $mdSize;
+
+    &--active,
+    &:hover {
+      border: 2px solid $pageNavBorderColor;
+      background-color: $bgWhiteColor;
+      border-radius: 6px;
+    }
+  }
+}
+
+@include desktop {
+  .page-nav__list {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+}

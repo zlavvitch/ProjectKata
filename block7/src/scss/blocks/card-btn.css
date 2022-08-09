@@ -1,0 +1,29 @@
+@import '~normalize.css';
+.card-btn {
+  display: flex;
+  width: 119px;
+  background: #FF3E79;
+  border-radius: 16px;
+  padding-left: 12px;
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+}
+.card-btn:hover {
+  opacity: 0.5;
+}
+.card-btn__text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 12px;
+}
+.card-btn__text::after {
+  content: "";
+  display: inline-block;
+  height: 9.63px;
+  width: 7px;
+  background-image: url(../img/arrow-price.svg);
+  margin-left: 17px;
+}

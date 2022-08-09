@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>CPS</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="page">
+    <header class="header header--hidden page__header">
+      <nav class="nav header__nav">
+        <ul class="nav__list header__list reset-list">
+          <li class="nav__item header__item--hidden header__item">
+            <a class="nav__link" href="#">
+              <img class="nav__img" src="./img/menu.svg" alt="Меню" />
+            </a>
+          </li>
+          <li class="nav__item header__item--hidden header__item">
+            <a class="nav__link" href="#">
+              <img class="nav__img" src="./img/logo.svg" alt="На главную" />
+            </a>
+          </li>
+          <li class="nav__tell nav__item header__item--hidden header__item">
+            <a class="nav__link" href="#call">
+              <img class="nav__img" src="./img/call.svg" alt="Позвонить" />
+            </a>
+          </li>
+          <li class="nav__item header__item--hidden header__item nav__chat">
+            <a class="nav__link" href="#chat">
+              <img class="nav__img" src="./img/chat.svg" alt="Начать чат" />
+            </a>
+          </li>
+          <li class="nav__item header__item--hidden header__item">
+            <a class="nav__link" href="#profile">
+              <img class="nav__img" src="./img/profile.svg" alt="Профиль" />
+            </a>
+          </li>
+          <li class="nav__item header__item">
+            <a class="nav__link" href="#repair">
+              <span class="nav__text nav__text--hidden">Оставить заявку</span>
+              <img
+                class="nav__img"
+                src="./img/repair.svg"
+                alt="Оставить заявку"
+              />
+            </a>
+          </li>
+          <li class="nav__item header__item">
+            <a class="nav__link" href="#check">
+              <span class="nav__text nav__text--hidden">Проверить статус</span>
+              <img
+                class="nav__img"
+                src="./img/checkstatus.svg"
+                alt="Проверить статус"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main page__main">
+      <aside class="menu main__menu">
+        <div class="menu__body">
+          <header class="menu-header menu__header">
+            <nav class="nav menu-header__nav">
+              <ul class="nav__list menu-header__list reset-list">
+                <li
+                  class="nav__item menu-header__item menu-header__item--hidden"
+                >
+                  <a class="nav__link" href="#close">
+                    <img class="nav__img" src="./img/close.svg" alt="Закрыть" />
+                  </a>
+                </li>
+                <li class="nav__item menu-header__item">
+                  <a
+                    class="nav__link"
+                    href="https://zlavvitch.github.io/ProjectKata/"
+                  >
+                    <img
+                      class="nav__img"
+                      src="./img/logo.svg"
+                      alt="На главную"
+                    />
+                  </a>
+                </li>
+                <li class="nav__item menu-header__item">
+                  <a class="nav__link" href="#search">
+                    <img class="nav__img" src="./img/search.svg" alt="Поиск" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <nav class="menu-nav menu__menu-nav">
+            <ul class="menu-nav__list reset-list">
+              <li class="menu-nav__item">
+                <a class="menu-nav__link menu-nav__link--active"
+                  >Ремонт техники</a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Услуги и сервисы</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Коорпоративным клиентам</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Продавцам техники</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Партнерам</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Производителям</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Наши сервисные центра</a>
+              </li>
+              <li class="menu-nav__item">
+                <a class="menu-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav">
+            <ul class="nav__list reset-list">
+              <li class="nav__tell nav__item">
+                <a class="nav__link" href="#call">
+                  <img class="nav__img" src="./img/call.svg" alt="Позвонить" />
+                </a>
+              </li>
+              <li class="nav__item nav__chat">
+                <a class="nav__link" href="#chat">
+                  <img class="nav__img" src="./img/chat.svg" alt="Начать чат" />
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#profile">
+                  <img class="nav__img" src="./img/profile.svg" alt="Профиль" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts menu__contacts">
+            <a class="link-mail contacts__link" href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="link-tell contacts__link" href="tel:+78008908900"
+              >8 800 890 8900</a
+            >
+          </address>
+          <div class="langs">
+            <a class="langs__link langs__link--active" href="#ru">RU</a>
+            <a class="langs__link" href="#en">EN</a>
+            <a class="langs__link" href="#ch">CH</a>
+          </div>
+        </div>
+      </aside>
+      <aside class="popup popup-feedback main__popup">
+        <div class="popup__body popup-feedback__body">
+          <header class="popup-header popup__header">
+            <nav class="nav popup-header__nav">
+              <ul class="nav__list popup-header__list reset-list">
+                <li class="nav__item popup-header__item nav__close">
+                  <a class="nav__link" href="#close">
+                    <img class="nav__img" src="./img/close.svg" alt="Закрыть" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="popup__content">
+            <div class="title popup__title">
+              <h1 class="title__text">Обратная связь</h1>
+            </div>
+            <form class="form popup__form" action="">
+              <input
+                class="form__item"
+                type="text"
+                name="name"
+                placeholder="Имя"
+              />
+              <input
+                class="form__item"
+                type="text"
+                name="tel"
+                placeholder="Телефон"
+              />
+              <input
+                class="form__item"
+                type="text"
+                name="email"
+                placeholder="Электронная почта"
+              />
+              <textarea
+                class="form__item"
+                name="textarea"
+                cols="30"
+                rows="4"
+                placeholder="Сообщение"
+              ></textarea>
+              <p class="form-text form__text"
+                >Нажимая “отправить”, вы даете согласие на
+                <span class="form-text__important">
+                  обработку персональных данных</span
+                >
+                и соглашаетесь с нашей
+                <span class="form-text__important"
+                  >политикой конфиденциальности</span
+                ></p
+              >
+              <a class="form__link card-btn" href="#buy">
+                <span class="card-btn__text">Отправить</span>
+              </a>
+            </form>
+          </section>
+        </div>
+      </aside>
+      <aside class="popup popup-call main__popup">
+        <div class="popup__body popup-call__body">
+          <header class="popup-header popup__header">
+            <nav class="nav popup-header__nav">
+              <ul class="nav__list popup-header__list reset-list">
+                <li class="nav__item popup-header__item nav__close">
+                  <a class="nav__link" href="#close">
+                    <img class="nav__img" src="./img/close.svg" alt="Закрыть" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="popup__content">
+            <div class="title popup__title">
+              <h1 class="title__text">Заказать звонок</h1>
+            </div>
+            <form class="form popup__form" action="">
+              <input
+                class="form__item"
+                type="text"
+                name="tel"
+                placeholder="Телефон"
+              />
+              <p class="form-text form__text"
+                >Нажимая “отправить”, вы даете согласие на
+                <span class="form-text__important">
+                  обработку персональных данных</span
+                >
+                и соглашаетесь с нашей
+                <span class="form-text__important"
+                  >политикой конфиденциальности</span
+                ></p
+              >
+              <a class="form__link card-btn" href="#buy">
+                <span class="card-btn__text">Отправить</span>
+              </a>
+            </form>
+          </section>
+        </div>
+      </aside>
+      <div class="main__content">
+        <div class="title main__title">
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+        <nav class="page-nav main__nav">
+          <ul class="page-nav__items reset-list">
+            <li class="page-nav__item">
+              <a class="page-nav__link page-nav__link--active" href="#repair"
+                >Ремонтируемые бренды</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#services"
+                >Дополнительные услуги</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#price">Цена на услуги</a>
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#adress"
+                >Адреса сервисных центров</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#specialprice"
+                >Специальные цены</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#specialprice"
+                >Специальные цены</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="#feedback">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="article main__article">
+          <div class="article__wrapper">
+            <p class="article__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+              <br /><br />
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+              <br /><br />
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="collapse-button article__button">
+              <img class="collapse-button__img" src="./img/icon.svg" alt="" />
+              <span class="button-title collapse-button__title"
+                >Читать далее</span
+              >
+              <span
+                class="button-title button-title--grey collapse-button__title--activated"
+                >Скрыть</span
+              >
+            </button>
+          </div>
+          <div class="article__img-wrapper">
+            <img
+              class="article__img"
+              src="./img/image1.png"
+              alt="Картинка к тексту"
+              ]\
+            />
+          </div>
+        </article>
+        <section class="catalog main__catalog">
+          <div class="subtitle catalog__subtitle">
+            <h2 class="subtitle__text">Ремонт техники различных брендов</h2>
+          </div>
+          <div class="cards swiper catalog__cards">
+            <ul class="cards__items swiper-wrapper reset-list">
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-samsung.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-apple.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-bosh.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-hp.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-acer.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-sony.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-lenovo.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-hp.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-bosh.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-apple.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+              <li class="card card-brand cards__item swiper-slide">
+                <a class="card__link card-brand__link" href="#company">
+                  <img
+                    class="card__logo"
+                    src="./img/logo-samsung.svg"
+                    alt="Компания"
+                  />
+                  <img class="card__img" src="./img/go.svg" alt="Перейти" />
+                </a>
+              </li>
+            </ul>
+            <div class="swiper__pagination swiper-pagination"></div>
+          </div>
+          <button
+            class="collapse-button catalog__button catalog__button--hidden"
+          >
+            <img class="collapse-button__img" src="./img/icon.svg" alt="" />
+            <span class="button-title collapse-button__title"
+              >Показать все</span
+            >
+            <span
+              class="button-title button-title--grey collapse-button__title--activated"
+              >Скрыть</span
+            >
+          </button>
+        </section>
+        <section class="catalog main__catalog">
+          <div class="subtitle catalog__subtitle">
+            <h2 class="subtitle__text">Ремонт различных видов техники</h2>
+          </div>
+          <div class="cards swiper catalog__cards">
+            <ul class="cards__items swiper-wrapper reset-list">
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text"
+                    >Ремонт планшетов</span
+                  >
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text">Ремонт ПК</span>
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text"
+                    >Ремонт мониторов</span
+                  >
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text">Ремонт ПК</span>
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text"
+                    >Ремонт планшетов</span
+                  >
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text">Ремонт ПК</span>
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+              <li class="card card-tech cards__item swiper-slide">
+                <a class="card__link card-tech__link" href="#work">
+                  <span class="card__text card-tech__text"
+                    >Ремонт мониторов</span
+                  >
+                  <img
+                    class="card__img card-tech__img"
+                    src="./img/go.svg"
+                    alt="Перейти"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="swiper__pagination swiper-pagination"></div>
+          </div>
+          <button
+            class="collapse-button catalog__button catalog__button--hidden"
+          >
+            <img class="collapse-button__img" src="./img/icon.svg" alt="" />
+            <span class="button-title collapse-button__title"
+              >Показать все</span
+            >
+            <span
+              class="button-title button-title--grey collapse-button__title--activated"
+              >Скрыть</span
+            >
+          </button>
+        </section>
+        <section class="catalog main__catalog">
+          <div class="subtitle catalog__subtitle">
+            <h2 class="subtitle__text">Цены на услуги</h2>
+          </div>
+          <div class="cards swiper catalog__cards">
+            <ul class="cards-price swiper-wrapper reset-list">
+              <li class="card-price card-price--hidden swiper-slide">
+                <h3 class="card-price__title">Ремонтные услуги</h3>
+                <h3 class="card-price__title">Цена</h3>
+                <h3 class="card-price__title">Срок</h3>
+                <a
+                  class="card-price__link card-price__link--hidden card-btn"
+                  href="#buy"
+                >
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+              <li class="card-price swiper-slide">
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Ремонтные услуги</h3
+                >
+                <span class="card-price__text"
+                  >Тестирование с выдачей технического заключения</span
+                >
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Цена</h3
+                >
+                <span class="card-price__text">Бесплатно</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Срок</h3
+                >
+                <span class="card-price__text">30-120 мин</span>
+                <a class="card-price__link card-btn" href="#buy">
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+              <li class="card-price swiper-slide">
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Ремонтные услуги</h3
+                >
+                <span class="card-price__text">Диагностика</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Цена</h3
+                >
+                <span class="card-price__text">Бесплатно</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Срок</h3
+                >
+                <span class="card-price__text">30 мин</span>
+                <a class="card-price__link card-btn" href="#buy">
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+              <li class="card-price swiper-slide">
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Ремонтные услуги</h3
+                >
+                <span class="card-price__text">Замена дисплея</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Цена</h3
+                >
+                <span class="card-price__text">1 000 ₽</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Срок</h3
+                >
+                <span class="card-price__text">30-120 мин</span>
+                <a class="card-price__link card-btn" href="#buy">
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+              <li class="card-price swiper-slide">
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Ремонтные услуги</h3
+                >
+                <span class="card-price__text"
+                  >Замена полифонического динамика</span
+                >
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Цена</h3
+                >
+                <span class="card-price__text">1 000 ₽</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Срок</h3
+                >
+                <span class="card-price__text">30-120 мин</span>
+                <a class="card-price__link card-btn" href="#buy">
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+              <li class="card-price swiper-slide">
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Ремонтные услуги</h3
+                >
+                <span class="card-price__text"
+                  >Замена программного обеспечения</span
+                >
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Цена</h3
+                >
+                <span class="card-price__text">1 000 ₽</span>
+                <h3 class="card-price__title card-price__title--hidden"
+                  >Срок</h3
+                >
+                <span class="card-price__text">30-120 мин</span>
+                <a class="card-price__link card-btn" href="#buy">
+                  <span class="card-btn__text">Заказать</span>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper__pagination swiper-pagination"></div>
+          </div>
+        </section>
+        <div class="paragraph main__paragraph">
+          <p class="paragraph__text"
+            >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p
+          >
+          <a href="#details" class="paragraph__link">
+            Получить коммерческое предложение
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer page__footer">
+      <div class="footer__wrapper">
+        <p class="footer__text">© 2019 CPS</p>
+        <p class="footer__text">Разработано командой Apesong</p>
+      </div>
+      <p class="footer__text">Политика конфиденциальности</p>
+      <p class="footer__text"
+        >Информация, размещенная на данной странице, не является публичной
+        офертой</p
+      >
+    </footer>
+  </body>
+</html>

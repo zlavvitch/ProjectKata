@@ -1,0 +1,159 @@
+@import './variables';
+@import '~normalize.css';
+@import '~swiper/swiper-bundle.css';
+@import './mixins/reset-list.scss';
+@import './mixins/media_breakpoints.scss';
+@import './blocks/nav.scss';
+@import './blocks/page-nav.scss';
+@import './blocks/collapse-button.scss';
+@import './blocks/page-header.scss';
+@import './blocks/page-footer.scss';
+@import './blocks/menu.scss';
+@import './blocks/popup.scss';
+@import './blocks/article.scss';
+@import './blocks/catalog.scss';
+@import './blocks/subtitle.scss';
+@import './blocks/title.scss';
+@import './blocks/form.scss';
+@import './blocks/paragraph.scss';
+@import './blocks/card-price.scss';
+@import './blocks/card-btn.scss';
+@import './blocks/card.scss';
+@import './blocks/swiper.scss';
+@import './blocks/contacts.scss';
+@import './blocks/langs.scss';
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@include reset-list;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: $bgGreyColor;
+  font-family: 'TT Lakes', sans-serif;
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  .main {
+    &__nav {
+      margin: 0 16px 24px 16px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__article {
+      margin-bottom: 24px;
+    }
+
+    &__catalog {
+      margin-bottom: 24px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    &__paragraph {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@include tablet {
+  .main {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__nav {
+      margin: 0 16px 32px 24px;
+    }
+
+    &__article {
+      margin-left: 24px;
+      margin-right: 40px;
+    }
+  }
+}
+
+@include desktop {
+  .nav {
+    &__link {
+      display: flex;
+      align-items: center;
+      outline: none;
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    &____link {
+      display: flex;
+      align-items: center;
+      outline: none;
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    &__text {
+      display: flex;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1b1c21;
+      margin-right: 8px;
+    }
+  }
+
+  .main {
+    &__content {
+      position: relative;
+      left: 320px;
+      width: calc(100% - 320px);
+    }
+
+    &__title {
+      margin-top: 42px;
+    }
+
+    &__nav {
+      margin-bottom: 19px;
+    }
+
+    &__article {
+      margin-bottom: 30px;
+    }
+  }
+}

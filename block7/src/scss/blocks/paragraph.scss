@@ -1,0 +1,61 @@
+@import '../variables.scss';
+@import '~normalize.css';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.paragraph {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: $smSize;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+  &__link {
+    outline: none;
+    text-decoration: none;
+    opacity: 1;
+    font-size: $mdSize;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $textBlackColor;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 9px;
+      background-image: url(../img/prg-arrow.svg);
+      margin-left: 5px;
+    }
+  }
+}
+
+@include tablet {
+  .paragraph {
+    padding: 0;
+    padding-left: 24px;
+    width: 421px;
+
+    &__text {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@include desktop {
+  .paragraph{
+    padding-left: 32px;
+  }
+}

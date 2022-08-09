@@ -1,0 +1,43 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    border-radius: 8px;
+    border: 1px solid $borderCardColor;
+    margin-bottom: 16px;
+    min-height: 48px;
+    padding-left: 16px;
+
+    &::placeholder {
+      font-size: $mdSize;
+      color: $placeholderColor;
+    }
+  }
+
+  .form-text {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: $smSize;
+    line-height: $mdSize;
+    color: $textGreyColor;
+
+    &__important {
+      color: $priceBtnColor;
+    }
+  }
+
+  &__link {
+    margin-left: auto;
+  }
+
+  .card-btn {
+    width: 136px;
+    padding: 4px 0;
+    justify-content: center;
+  }
+}

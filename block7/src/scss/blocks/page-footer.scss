@@ -1,0 +1,71 @@
+@import '../variables.scss';
+@import '../mixins/reset-list.scss';
+@import '../mixins/media_breakpoints.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bgWhiteColor;
+  border-top: 1px solid $borderPageColor;
+  max-height: 147px;
+  width: 100%;
+  padding: 16px 4px 19px 4px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    .footer__text {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 14px;
+    color: $textGreyColor;
+    font-size: $smSize;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+@include tablet {
+  .footer {
+    padding: 32px 24px 25px 24px;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &__wrapper {
+      margin: 0;
+      flex-basis: calc(100% / 3);
+      justify-content: flex-start;
+
+      .footer__text {
+        text-align: start;
+        align-self: flex-start;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      flex-basis: calc(100% / 3);
+
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .footer {
+    position: relative;
+    left: 320px;
+    width: calc(100% - 320px);
+    padding: 32px 33px 21px 31px;
+  }
+}

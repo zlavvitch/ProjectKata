@@ -1,0 +1,110 @@
+.card-price {
+  max-width: 260px;
+  height: 203px;
+  padding: 16px 16px 4px 16px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+.card-price--hidden {
+  display: none;
+}
+.card-price__title {
+  color: #7e7e82;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  opacity: 72.18%;
+  margin-bottom: 4px;
+}
+.card-price__text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+}
+.card-price__title ~ .card-price__text {
+  margin-bottom: 16px;
+}
+.card-price__link {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-price {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    padding: 16px 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-price--hidden {
+    display: flex;
+    background-color: #f8f8f8;
+  }
+  .card-price::after {
+    content: "";
+    width: calc(100% - 32px);
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/ph-line.svg);
+  }
+  .card-price:first-of-type::after {
+    display: none;
+  }
+  .card-price:nth-of-type(2) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .card-price:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .card-price:last-of-type::after {
+    display: none;
+  }
+  .card-price__title--hidden {
+    display: none;
+  }
+  .card-price__title ~ .card-price__text {
+    margin-bottom: 0;
+  }
+  .card-price__title {
+    flex-basis: 12%;
+  }
+  .card-price__title:first-of-type {
+    flex-basis: 59.5%;
+  }
+  .card-price__title:last-of-type {
+    flex-basis: none;
+  }
+  .card-price__text {
+    flex-basis: 12%;
+  }
+  .card-price__text:first-of-type {
+    flex-basis: 59.5%;
+  }
+  .card-price__link {
+    position: unset;
+    display: inline-flex;
+  }
+  .card-price__link--hidden {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .card-price {
+    padding: 16px 24px;
+  }
+  .card-price::after {
+    content: "";
+    width: calc(100% - 48px);
+  }
+}
