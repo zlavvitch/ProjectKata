@@ -47,16 +47,16 @@ menu.addEventListener('click', function (e) {
 for (let i = 0; i < openTellButtons.length; i++) {
   const openTellButton = openTellButtons[i];
   openTellButton.addEventListener('click', function () {
-    popupFeedback.classList.add('popup--opened');
-    popupFeedbackBody.classList.add('popup__body--opened');
+    popupCall.classList.add('popup--opened');
+    popupCallBody.classList.add('popup__body--opened');
   });
 }
 
 for (let i = 0; i < openChatButtons.length; i++) {
   const openChatButton = openChatButtons[i];
   openChatButton.addEventListener('click', function () {
-    popupCall.classList.add('popup--opened');
-    popupCallBody.classList.add('popup__body--opened');
+    popupFeedback.classList.add('popup--opened');
+    popupFeedbackBody.classList.add('popup__body--opened');
   });
 }
 
