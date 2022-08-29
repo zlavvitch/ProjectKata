@@ -1,0 +1,184 @@
+.table {
+  &::after {
+    content: '';
+    display: block;
+    width: 81px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+  }
+
+  &__items {
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: -10px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 203px;
+    max-width: 260px;
+    background-color: $bgWhiteColor;
+    border: 1px solid $borderCardColor;
+    border-radius: 6px;
+    padding: 16px 16px 4px 16px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__title {
+    color: $textGreyColor;
+    font-size: $smSize;
+    line-height: 18px;
+    font-weight: 500;
+    opacity: 72.18%;
+    margin-bottom: 4px;
+  }
+
+  &__title ~ &__text {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: $smSize;
+    line-height: 18px;
+  }
+
+  &__btn.btn-send {
+    position: absolute;
+    width: 119px;
+    padding: 0;
+    padding-left: 12px;
+    bottom: 20px;
+    right: 16px;
+  }
+
+  &__pagination {
+    margin-bottom: -10px;
+  }
+}
+
+@include tablet {
+  .table {
+    padding: 0 24px;
+
+    &::after {
+      content: '';
+      display: none;
+    }
+
+    &__items {
+      flex-direction: column;
+    }
+
+    &__item {
+      flex-direction: row;
+      max-width: 100%;
+      height: 64px;
+      padding: 0;
+      padding: 16px 16px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $bgWhiteColor;
+      border: none;
+      border-radius: 0;
+
+      &--hidden {
+        display: flex;
+      }
+
+      &:first-child {
+        background-color: $bgGreyColor;
+        height: 48px;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(2) {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      &:last-of-type {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: calc(100% - 32px);
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-image: url(../img/ph-line.svg);
+      }
+    }
+
+    &__title--hidden {
+      display: none;
+    }
+
+    &__title ~ &__text {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      flex-basis: 12%;
+
+      &:first-of-type {
+        flex-basis: 59.5%;
+      }
+    }
+
+    &__text {
+      flex-basis: 12%;
+
+      &:first-of-type {
+        flex-basis: 59.5%;
+      }
+    }
+
+    &__btn.btn-send {
+      position: unset;
+      display: inline-flex;
+    }
+
+    &__btn--hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+@include desktop {
+  .table {
+    padding: 16px 24px;
+
+    &::after {
+      content: '';
+      width: calc(100% - 48px);
+    }
+  }
+}

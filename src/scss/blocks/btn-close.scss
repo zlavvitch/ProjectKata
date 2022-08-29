@@ -1,0 +1,10 @@
+.btn-close {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

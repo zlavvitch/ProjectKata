@@ -1,0 +1,25 @@
+.communication {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@include tablet {
+  .communication {
+    &--hidden {
+      display: flex;
+    }
+  }
+}
+
+@include desktop {
+  .communication {
+    &--hidden {
+      display: none;
+    }
+  }
+}

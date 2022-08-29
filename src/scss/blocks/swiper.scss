@@ -1,17 +1,11 @@
-@import '../variables.scss';
-@import '../mixins/reset-list.scss';
-@import '../mixins/media_breakpoints.scss';
-
 .swiper {
   width: 100vw;
-  
+
   &-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 16px;
   }
 
   &-pagination {
-    bottom: 0 !important;
-
     &-bullet {
       width: 12px;
       height: 12px;
@@ -28,10 +22,6 @@
   .swiper {
     &-wrapper {
       padding-bottom: 0;
-    }
-
-    &__pagination {
-      display: none;
     }
   }
 }

@@ -1,9 +1,8 @@
-@import '../variables.scss';
-@import '../mixins/reset-list.scss';
-@import '../mixins/media_breakpoints.scss';
-
 .page-nav {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   &__items {
     display: flex;

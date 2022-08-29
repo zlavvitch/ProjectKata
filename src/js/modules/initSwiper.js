@@ -1,37 +1,38 @@
-'use strict'
+'use strict';
 
-import Swiper, { Pagination } from 'swiper'
-Swiper.use([Pagination])
+import Swiper, { Pagination } from 'swiper';
+Swiper.use([Pagination]);
 
-export let swiper
-export const initSwiper = function () {
-  swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
+const breakpoint = window.matchMedia('(max-width: 767px)');
+let init = false;
+let swiper;
 
-    loop: false,
-    spaceBetween: 16,
-    slidesOffsetBefore: 16,
-    slidesOffsetAfter: 16,
-    slidesPerView: 'auto',
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    }
-  })
-  return swiper
-}
-
-export const breakpoint = window.matchMedia('(max-width: 767px)')
-export function breakpointChecker() {
+export function swiperMode() {
   if (breakpoint.matches) {
-    initSwiper()
-    return
+    if (!init) {
+      init = true;
+      swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 16,
+        slidesOffsetBefore: 16,
+        slidesOffsetAfter: 16,
+        slidesPerView: 'auto',
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
   }
 
-  if (!breakpoint.matches && swiper !== undefined) {
+  if (!breakpoint.matches && init) {
+    init = false;
     for (let i = 0; i < swiper.length; i++) {
-      swiper[i].destroy(true, true)
+      swiper[i].destroy(true, true);
     }
   }
 }
+
+breakpoint.addEventListener('change', swiperMode);

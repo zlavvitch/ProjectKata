@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  background-color: $bgWhiteColor;
+  border-bottom: 1px solid $borderPageColor;
+  max-height: 88px;
+  padding: 0 16px;
+
+  &__item {
+    &:nth-of-type(2) {
+      margin-right: auto;
+    }
+
+    &:nth-child(4)::before {
+      content: '';
+      display: block;
+      height: 32px;
+      width: 2px;
+      margin: 28px 20px 27px 0;
+      background-image: url('../img/divider.png');
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 0 40px 0 24px;
+
+    & > &__item {
+      &:first-child {
+        &::after {
+          content: '';
+          display: block;
+          height: 32px;
+          width: 2px;
+          margin: 28px 0 27px 20px;
+          background-image: url('../img/divider.png');
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    &--hidden {
+      visibility: hidden;
+      position: absolute;
+      right: 0;
+      top: 42px;
+      padding-right: 32px;
+    }
+
+    &__item {
+      &:first-child,
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(4) {
+        &::before {
+          content: '';
+          display: none;
+        }
+      }
+
+      &:last-of-type,
+      &:nth-last-of-type(2) {
+        visibility: visible;
+        z-index: 2;
+        background-color: unset;
+      }
+    }
+  }
+}

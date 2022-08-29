@@ -1,17 +1,9 @@
-@import '../variables.scss';
-@import '~normalize.css';
-@import '../mixins/reset-list.scss';
-@import '../mixins/media_breakpoints.scss';
-
-.card-btn {
-  display: flex;
-  width: 119px;
+.btn-send {
+  border: none;
   background: $priceBtnColor;
   border-radius: 16px;
-  padding-left: 12px;
-
-  outline: none;
-  text-decoration: none;
+  width: 136px;
+  padding: 4px 0;
   opacity: 1;
 
   &:hover {
@@ -35,4 +27,3 @@
     }
   }
 }
-

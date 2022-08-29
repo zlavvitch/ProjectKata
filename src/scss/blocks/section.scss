@@ -1,0 +1,61 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  &__btn {
+    @include reset-btn;
+    display: flex;
+    align-items: center;
+    outline: none;
+    padding: 0;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__img {
+    margin-right: 16px;
+    transform: rotate(0);
+
+    &--activated {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title {
+    display: block;
+    opacity: 1;
+    font-size: $mdSize;
+    line-height: 24px;
+    white-space: nowrap;
+
+    &--activated {
+      display: none;
+      opacity: 0;
+    }
+
+    &--grey {
+      color: $textGreyColor;
+    }
+  }
+}
+
+@include tablet {
+  .section {
+    &__btn {
+      &--hidden {
+        display: flex;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .section {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

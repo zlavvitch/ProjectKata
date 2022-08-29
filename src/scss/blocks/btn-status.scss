@@ -1,0 +1,28 @@
+.btn-status {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &__text {
+    margin-right: 8px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .btn-status {
+    &__text {
+      &--hidden {
+        display: flex;
+      }
+    }
+  }
+}

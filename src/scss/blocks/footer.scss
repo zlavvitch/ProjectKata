@@ -1,7 +1,3 @@
-@import '../variables.scss';
-@import '../mixins/reset-list.scss';
-@import '../mixins/media_breakpoints.scss';
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -29,6 +25,16 @@
     font-size: $smSize;
     line-height: 16px;
     text-align: center;
+
+    &--link {
+      outline: none;
+      text-decoration: none;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }
 

@@ -1,0 +1,5 @@
+.btn-ghost {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+}

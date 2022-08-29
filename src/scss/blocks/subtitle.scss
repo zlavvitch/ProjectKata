@@ -1,12 +1,9 @@
-@import '../variables.scss';
-@import '../mixins/reset-list.scss';
-@import '../mixins/media_breakpoints.scss';
-
 .subtitle {
   display: flex;
   padding: 16px 0 16px 16px;
   border-top: 1px solid #d9fff5;
   background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  margin-bottom: 16px;
 
   &__text {
     margin: 0;
@@ -22,6 +19,7 @@
 @include tablet {
   .subtitle {
     padding-left: 24px;
+    margin-bottom: 24px;
     background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   }
 }
